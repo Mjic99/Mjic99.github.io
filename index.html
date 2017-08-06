@@ -82,38 +82,21 @@
                 <label> Contraseña: </label>
                 <input type="password"/>
                 </p>
-                <table class="form">
-                    <tr>
-                        <th>
-                            Preferencias:
-                        </th>
-                        <th>
-                            Sexo:
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="cheddar" id="a" value="Cheddar"/>Cheddar
-                        </td>
-                        <td>
-                            <input type="radio" name="hombre" id="h" value="masculino"/>Masculino
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="cottage" id="b" value="Cottage"/>Cottage
-                        </td>
-                        <td>
-                            <input type="radio" name="mujer" id="m" value="Femenino"/>Femenino
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="edam" id="c" value="Edam"/>Edam
-                        </td>
-                    </tr>
-                </table>
-                <p>
+		<div class="row">
+        		<div class="col-md-6">Preferencias:</div>
+        		<div class="col-md-6">Sexo:</div>
+      		</div>
+		<div class="row">
+        		<div class="col-md-6">
+				<input type="checkbox" name="cheddar" id="a" value="Cheddar"/>Cheddar<br>
+				<input type="checkbox" name="cottage" id="b" value="Cottage"/>Cottage<br>
+				<input type="checkbox" name="edam" id="c" value="Edam"/>Edam
+			</div>
+        		<div class="col-md-6">
+				<input type="radio" name="hombre" id="h" value="masculino"/>Masculino<br>
+				<input type="radio" name="mujer" id="m" value="Femenino"/>Femenino
+			</div>
+      		</div>
                     <label for="hora">¿En qué comida te gusta más comer queso? </label>
                     <select name="hora" id="comida">
                         <option>Desayuno</option>
