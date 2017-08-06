@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Rico queso</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
+
+    <body>
+       <style>
+           body{
+               background-image: url(extradip.jpg);
+               font-family:sans-serif;
+           }
+           h1{
+               font-style: italic;
+               font-family: fantasy;
+           }
+           table{
+
+           }
+           table.form{
+               text-align: left;
+               width: 30%;
+           }
+           img{
+               padding-left: 50px;
+           }
+        </style>
+
+        <div class="container-fluid">
+            <h1>Me gusta el queso</h1>
+            <img src="queso1.png" class="image-responsive">
+
+            <p>Estos son los tipos de queso:</p>
+
+            <ul>
+                <li type=circle>Cottage</li>
+                <li type=disc style="color:blue">Azul</li>
+                <li type=square>Mozzarella</li>
+            </ul>
+            <p>A continuación muestro los pasos para crear queso cottage:</p>
+            <ol>
+                <li>Templar ligeramente la leche (30ºC).</li>
+                <li>Vaciar la capsula en medio vaso de la leche templada.  Remover bien hasta su completa disolución.</li>
+                <li>Mezclar con el resto de la leche. Tapar para conservar el calor.</li>
+                <li>Poner calcio y cuajo.</li>
+                <li>Reposar 24 horas en un sitio abrigado y tapado.</li>
+                <li>Cortar la cuajada en cuadrados de 2 cm.</li>
+                <li>Calentar la cuajada a 38ºC lentamente, mantenerla 10 minutos.</li>
+                <li>Subir la temperatura a 45ºC y mantenerla 10 minutos o hasta que la cuajad esté con consistencia firme.</li>
+                <li>Forrar un colador con la tela y dejar desuerando.</li>
+                <li>Cuando tenga una consistencia firme desmenuzar con la mano y salar ligeramente.</li>
+                <li>Guardar en la nevera .Secar el suero que vaya soltando el queso, para favorecer su conservación.</li>
+            </ol>
+            <p>¿Por qué es genial el queso?</p>
+            <dl>
+                <dt>Queso cottage:</dt>
+                <img src="cottage.jpg" class="image-responsive">
+                <dd>-Es muy suave</dd>
+                <dd>-Viene en la ensalada de pardos</dd>
+                <dt>Queso mozzarella:</dt>
+                <img src="mozzarella.jpg" class="image-responsive">
+                <dd>-Es rico</dd>
+                <dd>-Viene en la pizza</dd>
+                <dd>-La pizza tambien es rica</dd>
+            </dl>
+            <br/>
+            <form action="Pagina_proceso.html">
+                <p>
+                <label for="nombre"> Nombre: </label>
+                <input type="text" name="nombre" id="nombre" maxlength="50"/>
+                </p>
+                <p>
+                <label> Contraseña: </label>
+                <input type="password"/>
+                </p>
+                <table class="form">
+                    <tr>
+                        <th>
+                            Preferencias:
+                        </th>
+                        <th>
+                            Sexo:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="cheddar" id="a" value="Cheddar"/>Cheddar
+                        </td>
+                        <td>
+                            <input type="radio" name="hombre" id="h" value="masculino"/>Masculino
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="cottage" id="b" value="Cottage"/>Cottage
+                        </td>
+                        <td>
+                            <input type="radio" name="mujer" id="m" value="Femenino"/>Femenino
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="edam" id="c" value="Edam"/>Edam
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    <label for="hora">¿En qué comida te gusta más comer queso? </label>
+                    <select name="hora" id="comida">
+                        <option>Desayuno</option>
+                        <option>Almuerzo</option>
+                        <option>Cena</option>
+                        <option>La hora de lonchecito</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar"/>
+                    <input type="reset" value="Limpiar"/>
+                    <input type="button" name="ejecutar" value="Ejecutar"/>
+                </p>
+                <p style="text-align: center; padding-right:200px">
+                    Copyright marcelitoxd ULima 2017
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
