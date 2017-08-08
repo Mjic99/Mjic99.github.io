@@ -13,32 +13,33 @@
     </head>
 
     <body>
-       <style>
-           body{
-               background-image: url(extradip.jpg);
-               font-family:sans-serif;
-           }
-           h1{
-               font-style: italic;
-               font-family: fantasy;
-           }
-           table{
-
-           }
-           table.form{
-               text-align: left;
-               width: 30%;
-           }
-           img{
-	       width: 100%;
-	       height: auto;
-           }
+        <style>
+            body{
+                background-image: url(extradip.jpg);
+                font-family:tahoma;
+                font-color:black;
+            }
+            h1{
+                font-style: italic;
+                font-family: fantasy;
+            }
+            table.form{
+                text-align: left;
+                width: 30%;
+            }
+            img{    	        
+                width: 100%;
+	            height: auto;
+            }
         </style>
 
         <div class="container-fluid">
             <h1>Me gusta el queso</h1>
-            <img src="queso1.png" class="img-fluid">
-
+	    <div class="row">
+		    <div class="col-xs-12 col-md-4">
+            	 <img src="queso1.png" class="img-fluid">
+		    </div>
+	    </div>
             <p>Estos son los tipos de queso:</p>
 
             <ul>
@@ -63,53 +64,59 @@
             <p>¿Por qué es genial el queso?</p>
             <dl>
                 <dt>Queso cottage:</dt>
-                <img src="cottage.jpg" class="image-responsive">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <img src="cottage.jpg" class="img-fluid">
+                    </div>
+                </div>
                 <dd>-Es muy suave</dd>
                 <dd>-Viene en la ensalada de pardos</dd>
                 <dt>Queso mozzarella:</dt>
-                <img src="mozzarella.jpg" class="image-responsive">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <img src="mozzarella.jpg" class="img-fluid">
+                    </div>
+                </div>
                 <dd>-Es rico</dd>
                 <dd>-Viene en la pizza</dd>
                 <dd>-La pizza tambien es rica</dd>
             </dl>
             <br/>
-                <p>
+            <p>
                 <label for="nombre"> Nombre: </label>
                 <input type="text" name="nombre" id="nombre" maxlength="50"/>
-                </p>
-                <p>
+            </p>
+            <p>
                 <label> Contraseña: </label>
                 <input type="password"/>
-                </p>
+            </p>
 		<div class="row">
-        		<div class="col-xs-6 col-md-6 col-sm-6">Preferencias:</div>
-        		<div class="col-xs-6 col-md-6 col-sm-6">Sexo:</div>
+        		<div class="col-xs-6 col-md-3 col-sm-6">Preferencias:</div>
+        		<div class="col-xs-6 col-md-3 col-sm-6">Sexo:</div>
       		</div>
 		<div class="row">
-        		<div class="col-xs-6 col-md-6 col-sm-6">
+        		<div class="col-xs-6 col-md-3 col-sm-6">
 				<input type="checkbox"/>Cheddar<br>
 				<input type="checkbox"/>Cottage<br>
 				<input type="checkbox"/>Edam
 			</div>
-        		<div class="col-xs-6 col-md-6 col-sm-6">
+        		<div class="col-xs-6 col-md-3 col-sm-6">
 				<input type="radio"/>Masculino<br>
 				<input type="radio"/>Femenino<br>
 				<input type="radio"/>PUCP
 
 			</div>
       		</div>
-                    <label for="hora">¿En qué comida te gusta más comer queso? </label>
+                <label for="hora">¿En qué comida te gusta más comer queso? </label>
                     <select name="hora" id="comida">
                         <option>Desayuno</option>
                         <option>Almuerzo</option>
                         <option>Cena</option>
                         <option>La hora de lonchecito</option>
                     </select>
-                </p>
                 <p>
-                    <input type="submit" value="Enviar"/>
-                    <input type="reset" value="Limpiar"/>
-                    <input type="button" name="ejecutar" value="Ejecutar"/>
+		<button class="btn btn-success">Enviar</button>	
+		<button class="btn btn-default">Limpiar</button>
                 </p>
                 <p class="text-center">
                     Copyright marcelo_el_papi ULima 2017
